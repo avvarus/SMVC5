@@ -1,10 +1,8 @@
-package com.avvarus;
+package com.avvarus.controllers;
 
+import com.avvarus.model.User;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
 import java.util.Map;
@@ -27,12 +25,25 @@ public class StudentController {
         return mv;
     }
 
-    @RequestMapping(value = "/submitStud", method = RequestMethod.POST)
-    public ModelAndView welcome1(@RequestParam("uname") String uname,
-                                 @RequestParam("pwd") String pwd) {
+//    @RequestMapping(value = "/submitStud", method = RequestMethod.POST)
+//    public ModelAndView welcome1(@RequestParam("uname") String uname,
+//                                 @RequestParam("pwd") String pwd) {
+//
+//
+//        User user = new User(uname, pwd);
+//
+//        ModelAndView mv = new ModelAndView("views/StudLogSuccess");
+//        mv.addObject("msg", "Values " + user.getUname() + " ---- " + user.getPwd());
+//        mv.addObject("user", user);
+//        return mv;
+//    }
 
+    @RequestMapping(value = "/submitStud", method = RequestMethod.POST)
+    public ModelAndView welcome1(@ModelAttribute("user") User user) {
+        
         ModelAndView mv = new ModelAndView("views/StudLogSuccess");
-        mv.addObject("msg", "Values " + pwd + " ---- " + uname);
+        //mv.addObject("msg", "Values " + user.getUname() + " ---- " + user.getPwd());
+        mv.addObject("user", user);
         return mv;
     }
 

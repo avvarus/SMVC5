@@ -8,10 +8,13 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Title</title>
+    <title>Portal App</title>
 </head>
 <body>
 
-<h1>${msg}</h1>
+<h3>${msg}</h3>
+
+<h3>User Name :${user.uname}</h3>
+<h3>Password :${user.pwd}</h3>
 </body>
 </html>
