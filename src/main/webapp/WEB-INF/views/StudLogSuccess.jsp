@@ -16,5 +16,6 @@
 
 <h3>User Name :${user.uname}</h3>
 <h3>Password :${user.pwd}</h3>
+<h3>Cars :${user.skills}</h3>
 </body>
 </html>

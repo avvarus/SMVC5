@@ -1,5 +1,6 @@
 package com.avvarus.model;
 
+import java.util.ArrayList;
 import java.util.Date;
 
 public class Student {
@@ -9,6 +10,16 @@ public class Student {
     private int age;
     private String college;
     private Date dob;
+
+    private ArrayList<String> skills;
+
+    public ArrayList<String> getSkills() {
+        return skills;
+    }
+
+    public void setSkills(ArrayList<String> skills) {
+        this.skills = skills;
+    }
 
     public Student() {
     }
