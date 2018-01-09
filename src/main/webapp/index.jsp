@@ -8,11 +8,12 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Title</title>
+    <title>BankApp</title>
 </head>
 <body>
 
 <h1> Welcome to World !! </h1>
+<%--<a href="views/HelloPage.jsp">Enter Here !!! </a>--%>
 
 </body>
 </html>
