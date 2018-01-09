@@ -25,22 +25,24 @@ public class StudentController {
         return mv;
     }
 
-//    @RequestMapping(value = "/submitStud", method = RequestMethod.POST)
-//    public ModelAndView welcome1(@RequestParam("uname") String uname,
-//                                 @RequestParam("pwd") String pwd) {
-//
-//
-//        User user = new User(uname, pwd);
-//
-//        ModelAndView mv = new ModelAndView("views/StudLogSuccess");
-//        mv.addObject("msg", "Values " + user.getUname() + " ---- " + user.getPwd());
-//        mv.addObject("user", user);
-//        return mv;
-//    }
+    /*
+    @RequestMapping(value = "/submitStud", method = RequestMethod.POST)
+    public ModelAndView welcome1(@RequestParam("uname") String uname,
+                                 @RequestParam("pwd") String pwd) {
+
+
+        User user = new User(uname, pwd);
+
+        ModelAndView mv = new ModelAndView("views/StudLogSuccess");
+        mv.addObject("msg", "Values " + user.getUname() + " ---- " + user.getPwd());
+        mv.addObject("user", user);
+        return mv;
+    }
+    */
 
     @RequestMapping(value = "/submitStud", method = RequestMethod.POST)
     public ModelAndView welcome1(@ModelAttribute("user") User user) {
-        
+
         ModelAndView mv = new ModelAndView("views/StudLogSuccess");
         //mv.addObject("msg", "Values " + user.getUname() + " ---- " + user.getPwd());
         mv.addObject("user", user);

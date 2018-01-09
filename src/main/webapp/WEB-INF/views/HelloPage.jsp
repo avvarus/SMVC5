@@ -18,7 +18,7 @@
 <div style="margin: 20px">
 
     <form action="/SMVC5/submitPage" method="post">
-        <ul>
+        <ol>
             <li>First Name <input type="text" name="fName"></li>
             <li> Middle Name <input type="text" name="lName"></li>
             <li>Age Name <input type="text" name="age"></li>
@@ -26,7 +26,7 @@
             <li>College <input type="text" name="college"></li>
 
             <p><input type="submit" name="submit"></p>
-        </ul>
+        </ol>
     </form>
 
 </div>
