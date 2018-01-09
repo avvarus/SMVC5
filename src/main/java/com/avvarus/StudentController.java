@@ -20,6 +20,21 @@ public class StudentController {
         return mv;
     }
 
+    @RequestMapping(value = "/welcome1", method = RequestMethod.GET)
+    public ModelAndView welcome1() {
+
+        ModelAndView mv = new ModelAndView("views/StudentPage");
+        return mv;
+    }
+
+    @RequestMapping(value = "/submitStud", method = RequestMethod.POST)
+    public ModelAndView welcome1(@RequestParam("uname") String uname,
+                                 @RequestParam("pwd") String pwd) {
+
+        ModelAndView mv = new ModelAndView("views/StudLogSuccess");
+        mv.addObject("msg", "Values " + pwd + " ---- " + uname);
+        return mv;
+    }
 
     @RequestMapping(value = "/hi/{name}/{value}")
     public ModelAndView hi(@PathVariable Map<String, String> pathVars) {
