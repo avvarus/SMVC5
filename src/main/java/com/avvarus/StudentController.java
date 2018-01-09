@@ -13,7 +13,7 @@ import java.util.Map;
 public class StudentController {
 
 
-    @RequestMapping(value = "/welcome")
+    @RequestMapping(value = "/welcome", method = RequestMethod.GET)
     public ModelAndView welcome() {
 
         ModelAndView mv = new ModelAndView("views/HelloPage");
