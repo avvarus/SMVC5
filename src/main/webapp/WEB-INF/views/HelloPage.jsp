@@ -25,13 +25,6 @@
             <li>Date Of Birth <input type="date" name="dob"></li>
             <li>College <input type="text" name="college"></li>
 
-            <li>Skills &nbsp;<select name="skills">--Select--
-                <option value="volvo">Volvo</option>
-                <option value="saab">Saab</option>
-                <option value="mercedes">Mercedes</option>
-                <option value="audi">Audi</option>
-            </select></li>
-
             <p><input type="submit" name="submit"></p>
         </ol>
     </form>

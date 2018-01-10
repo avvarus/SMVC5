@@ -1,35 +1,11 @@
 package com.avvarus.model;
 
-import java.util.ArrayList;
-import java.util.Date;
-
 public class Student {
-
-    private String fName;
-    private String lName;
-    private int age;
-    private String college;
-    private Date dob;
-
-    private ArrayList<String> skills;
-
-    public ArrayList<String> getSkills() {
-        return skills;
-    }
-
-    public void setSkills(ArrayList<String> skills) {
-        this.skills = skills;
-    }
-
-    public Student() {
-    }
-
-    public Student(String fName, String lName, int age, String college, Date dob) {
+    public Student(String fName, String lName, String college, int age) {
         this.fName = fName;
         this.lName = lName;
-        this.age = age;
         this.college = college;
-        this.dob = dob;
+        this.age = age;
     }
 
     public String getfName() {
@@ -48,14 +24,6 @@ public class Student {
         this.lName = lName;
     }
 
-    public int getAge() {
-        return age;
-    }
-
-    public void setAge(int age) {
-        this.age = age;
-    }
-
     public String getCollege() {
         return college;
     }
@@ -64,11 +32,22 @@ public class Student {
         this.college = college;
     }
 
-    public Date getDob() {
-        return dob;
+    private String fName;
+    private String lName;
+    private int age;
+
+    public int getAge() {
+        return age;
     }
 
-    public void setDob(Date dob) {
-        this.dob = dob;
+    public void setAge(int age) {
+        this.age = age;
     }
+
+    private String college;
+    //private Date dob;
+
+    public Student() {
+    }
+
 }

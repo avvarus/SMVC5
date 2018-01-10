@@ -17,5 +17,33 @@
 <h3>User Name :${user.uname}</h3>
 <h3>Password :${user.pwd}</h3>
 <h3>Cars :${user.skills}</h3>
+<%--<h3>Cars :${user.student}</h3>--%>
+<h3>
+    Student Details
+
+    <table>
+        <tr>
+            <td>First Name ::</td>
+            <td>${user.student.fName}</td>
+        </tr>
+
+        <tr>
+            <td>Last Name ::</td>
+            <td>${user.student.lName}</td>
+        </tr>
+        <tr>
+            <td>Student Age ::</td>
+            <td>${user.student.age}</td>
+        </tr>
+        <tr>
+            <td>Student College ::</td>
+            <td>${user.student.college}</td>
+        </tr>
+        <%--<tr>--%>
+        <%--<td>Student DOB ::</td>--%>
+        <%--<td>${user.student.dob}</td>--%>
+        <%--</tr>--%>
+    </table>
+</h3>
 </body>
 </html>

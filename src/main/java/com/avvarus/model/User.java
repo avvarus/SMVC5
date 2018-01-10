@@ -3,30 +3,25 @@ package com.avvarus.model;
 import java.util.ArrayList;
 
 public class User {
+
     private String uname;
-
-    private ArrayList<String> skills;
-
-    public ArrayList<String> getSkills() {
-        return skills;
-    }
-
     private String pwd;
-
-    public void setSkills(ArrayList<String> skills) {
-        this.skills = skills;
-    }
+    private Student student;
+    private ArrayList<String> skills;
 
     public User() {
     }
 
-    public User(String uname, String pwd) {
-        this.uname = uname;
-        this.pwd = pwd;
-    }
-
     public String getUname() {
         return uname;
+    }
+
+    public User(String uname, String pwd, Student student, ArrayList<String> skills) {
+        this.uname = uname;
+        this.pwd = pwd;
+
+        this.student = student;
+        this.skills = skills;
     }
 
     public void setUname(String uname) {
@@ -39,5 +34,21 @@ public class User {
 
     public void setPwd(String pwd) {
         this.pwd = pwd;
+    }
+
+    public Student getStudent() {
+        return student;
+    }
+
+    public void setStudent(Student student) {
+        this.student = student;
+    }
+
+    public ArrayList<String> getSkills() {
+        return skills;
+    }
+
+    public void setSkills(ArrayList<String> skills) {
+        this.skills = skills;
     }
 }
